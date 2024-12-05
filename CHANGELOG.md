@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+
+### [0.0.2](https://github.com/timenglesf/pi-homelab/compare/v0.0.1...v0.0.2) (2024-12-05)
+
+
+### Bug Fixes
+
+* **linkding:** update apiVersion in apps/base/linkding/kustomization.yaml ([a8f134b](https://github.com/timenglesf/pi-homelab/commit/a8f134b448195d85db7392a7a2203018fa8d819c))
+
+
 ### 0.0.1 (2024-12-05)
 
 
