@@ -1,35 +1,10 @@
 apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: linkding-data-pv
-spec:
-  capacity:
-    storage: 1Gi
-  accessModes:
-    - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Retain
-  storageClassName: manual
-  volumeMode: Filesystem
-  local:
-    path: /data/linkding
-  nodeAffinity:
-    required:
-      nodeSelectorTerms:
-        - matchExpressions:
-            - key: k3s.io/hostname
-              operator: In
-              values: ["pi5-server"]
-
----
-apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: linkding-data-pvc
 spec:
-  storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 1Gi
-  volumeName: linkding-data-pv
