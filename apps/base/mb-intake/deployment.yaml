@@ -18,7 +18,7 @@ spec:
         runAsGroup: 33 # www-data group ID
       containers:
         - name: mb-intake
-          image: timenglesf/mb-bike-intake:0.4.0-arm64
+          image: timenglesf/mb-bike-intake:0.4.1-arm64
           ports:
             - containerPort: 8080
           envFrom:
