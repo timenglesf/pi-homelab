@@ -4,3 +4,6 @@ namespace: mb-intake
 resources:
   - ../../base/mb-intake
   - mb-admin-mongo-env.yaml
+  - cloudflare.yaml
+  - ingress.yaml
+  - cloudflare-secret.yaml
