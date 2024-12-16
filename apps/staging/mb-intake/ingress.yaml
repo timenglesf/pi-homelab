@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mb-intake
+  namespace: mb-intake
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: mbintake.devtim.dev
+      http:
+        paths:
+          - backend:
+              service:
+                name: mbintake
+                port:
+                  number: 8080
+            path: /
+            pathType: Prefix

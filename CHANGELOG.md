@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/timenglesf/pi-homelab/compare/v0.3.0...v0.4.0) (2024-12-16)
+
+
+### Features
+
+* **mb-intake:** add cloudflare integration ([00adf23](https://github.com/timenglesf/pi-homelab/commit/00adf2311c0385a88dd7c8e0d83c5b899294832c))
+
+
+### Bug Fixes
+
+* upgrade deployment image due to incorrect run directory ([e364e10](https://github.com/timenglesf/pi-homelab/commit/e364e109413f3e48626845c30a1a36dcf90f9b57))
+
 ## [0.3.0](https://github.com/timenglesf/pi-homelab/compare/v0.2.0...v0.3.0) (2024-12-16)
 
 
