@@ -51,19 +51,16 @@ metadata:
   name: cloudflared
 data:
   config.yaml: |
-    # Name of the tunnel you want to run
-
     tunnel: mbIntake 
 
     credentials-file: /etc/cloudflared/creds/credentials.json
 
-    # Serves the metrics server under /metrics and the readiness server under /ready
     metrics: 0.0.0.0:2000
     no-autoupdate: true
 
     ingress:
     - hostname: mbintake.devtim.dev
-    service: http://mb-intake:8080
+      service: http://mb-intake:8080
 
     # This rule sends traffic to the built-in hello-world HTTP server. This can help debug connectivity
     # issues. If hello.example.com resolves and tunnel.example.com does not, then the problem is
