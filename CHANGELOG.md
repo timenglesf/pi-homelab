@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/timenglesf/pi-homelab/compare/v0.2.0...v0.3.0) (2024-12-16)
+
+
+### Features
+
+* add ingress resource for linkding ([f4073f4](https://github.com/timenglesf/pi-homelab/commit/f4073f409c720d3e4dbae468c678a4d94524ed65))
+* add mb-intake deployment and kustomization ([f1bf104](https://github.com/timenglesf/pi-homelab/commit/f1bf10414778a22e28081d537574f18ceb530d9f))
+* **linkding:** add node affinity to deployment ([d592b06](https://github.com/timenglesf/pi-homelab/commit/d592b067fcb3465061751ab0fc3eb445370ad68a))
+* **linkding:** temporarily comment out cloudflare.yaml to close cloudflare tunnels ([391feed](https://github.com/timenglesf/pi-homelab/commit/391feed67e107aa0bc9f0b990820cb1e73dbcb4c))
+* **linkding:** update node selector and add PV ([4a41f30](https://github.com/timenglesf/pi-homelab/commit/4a41f30561d8ecea22e18bbab54a92521361fc8f))
+
+
+### Bug Fixes
+
+* add storageClassName ([f91465b](https://github.com/timenglesf/pi-homelab/commit/f91465b6070073d854944825ca075c7eee693843))
+* add web entry point annotation to linkding ingress ([cb3a7a4](https://github.com/timenglesf/pi-homelab/commit/cb3a7a40386ebfcdf1b813fe1e7fa2eed4bf1dcd))
+* convert storage back to PVC ([5f93dfe](https://github.com/timenglesf/pi-homelab/commit/5f93dfef894bb58656bf2f41a42993c5cc00390d))
+* remove node affinity for linkding deployment ([a732db8](https://github.com/timenglesf/pi-homelab/commit/a732db8a2ec50b5f0686f0be1b4ee5f5b0dd09eb))
+* Removed redundant CHANGELOG.md from monitoring/controllers/base ([c6076ec](https://github.com/timenglesf/pi-homelab/commit/c6076ecd099c3ff3de1597c62183bd2197171473))
+* uncomment cloudflare.yaml from apps/staging/linkding/kustomization ([c34e490](https://github.com/timenglesf/pi-homelab/commit/c34e490198ab334c20d2bde3ff6420b4de8771ad))
+
 ## [0.2.0](https://github.com/timenglesf/pi-homelab/compare/v0.1.2...v0.2.0) (2024-12-12)
 
 ### Features
