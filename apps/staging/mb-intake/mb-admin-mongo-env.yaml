@@ -1,0 +1,30 @@
+apiVersion: v1
+data:
+  MB_ADMIN: ENC[AES256_GCM,data:nRh9e26VGbs=,iv:hf70EgbN2nF8OVgLs1jabzqPXNwo5FJpgB3O9BKUxvg=,tag:Xh6KpARSppdDX6vekAlq2w==,type:str]
+  MB_PASS: ENC[AES256_GCM,data:wICXF1lt3CYllyZtTEGdpQ78xxifQs2N,iv:6U8DFD0t6pG/RltLCVk6kuRjZ/G6wRm+cKtheXg/FVo=,tag:qwEMQpHLqxowbaukWj6X9Q==,type:str]
+  MONGO_URI: ENC[AES256_GCM,data:bAlYNjQQMaHp21+awV2UyzndcXCEMrQFqdNufeXhvB3zJ5mmc/xg9AMVGvJXkX82apvywJZDWOrUg41sxkW8PFlz9PDBMisoMWW74xcMGSuFF16M3KLbIIMxC0h/n0AWs3XdeZLVYFAr3eD81pGQqtj0zjsfdQ62ztbrcbKPwaEnTHXaGMjJOfee0kn3jSJJ6QSQMobYXbm2Sv/1k4B9fQ==,iv:Qglv2GqEKUps7+FeH9cjooVHiBxXsVbF6GBLskpo2+w=,tag:laRunrD9tyM0vZgxWUYf7w==,type:str]
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: mb-admin-mongo-env
+  namespace: mb-intake
+sops:
+  kms: []
+  gcp_kms: []
+  azure_kv: []
+  hc_vault: []
+  age:
+    - recipient: age1077lsst7gx63xavswcv2ru8wu4rj6cz5ak6y6nnkaq9yp759z4ms54w0kp
+      enc: |
+        -----BEGIN AGE ENCRYPTED FILE-----
+        YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAvYzVlRmpSamJlY2tnRFZp
+        dXhPTnZKdGxjYWRQekNUTGI4MUZsLy9qQlRBCjFxZzFDNDJjc1BVTXErT1Q3bFFT
+        QVVySEVnWTN2RkVmQW9EYk84V0lGTmcKLS0tIERVVkx5WjhwS1VJKy9uVzB4UGUr
+        NW9sMUF5bUF5S1A4UUEwK3RSNm9velUKVMtlPGTc2XVrlLQ91I/FKP7tUaO12P3Z
+        yG8h4yVpOI724wru7zBM8ScL0VIski8TEWSu2T6dtLQN7O76B1A2lg==
+        -----END AGE ENCRYPTED FILE-----
+  lastmodified: "2024-12-16T02:36:42Z"
+  mac: ENC[AES256_GCM,data:b8Bc286dA/vf69RrXLCB/PHP2EjSDzBhdC3km2FIHMni812yPZbkSAqARhkAXbuBjLqAih3rQoy0ip+cYJD8SCVrbIhbMu1V6tQT4qTDeG9PjpAXQm2VeKfwmh1vkAKhRkEqx2/XwLKdJ8O1TeRi5qru6OOY8m1s630BIrpkmjw=,iv:R+U4eJYRSRqb2OQWwDjNxBQwsI3JaspBYSt+RKyD8fk=,tag:EGb+1JaYo1YFWDwIx7RHWQ==,type:str]
+  pgp: []
+  encrypted_regex: ^(data|stringData)$
+  version: 3.9.2

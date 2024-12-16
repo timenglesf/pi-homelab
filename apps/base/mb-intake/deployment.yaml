@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mb-intake
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mb-intake
+  template:
+    metadata:
+      labels:
+        app: mb-intake
+    spec:
+      securityContext:
+        fsGroup: 33 # www-data group ID
+        runAsUser: 33 # www-data group ID
+        runAsGroup: 33 # www-data group ID
+      containers:
+        - name: mb-intake
+          image: timenglesf/mb-bike-intake:0.4.0-arm64
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - secretRef:
+                name: mb-admin-mongo-env
+          securityContext:
+            allowPrivilegeEscalation: false
