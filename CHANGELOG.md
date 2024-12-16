@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/timenglesf/pi-homelab/compare/v0.4.0...v0.4.1) (2024-12-16)
+
+
+### Bug Fixes
+
+* update yaml syntax error ([d0b9068](https://github.com/timenglesf/pi-homelab/commit/d0b906803df8cbf459067ffaa6d22c20bc054290))
+
 ## [0.4.0](https://github.com/timenglesf/pi-homelab/compare/v0.3.0...v0.4.0) (2024-12-16)
 
 
